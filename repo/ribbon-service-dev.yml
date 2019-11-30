@@ -1,6 +1,10 @@
 spring:
   profiles:
     active: dev
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 eureka:
   client:
     service-url:
