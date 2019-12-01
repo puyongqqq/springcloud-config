@@ -10,3 +10,6 @@ zuul:
     ribbon-service:
       path: /a/**
       serviceId: ribbon-service
+management:
+ security:
+  enabled: false
