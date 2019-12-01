@@ -5,3 +5,8 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+zuul:
+  routers:
+    ribbon-service:
+      path: /a/**
+      serviceId: ribbon-service
