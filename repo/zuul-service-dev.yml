@@ -11,7 +11,7 @@ spring:
     username: guest
     password: guest
 zuul:
-  routers:
+  routes:
     service-a:
       path: /service/**
       serviceId: ribbon-service
