@@ -12,9 +12,11 @@ spring:
     password: guest
 zuul:
   routes:
-    service-a:
-      path: /service/**
-      serviceId: ribbon-service
+#    service-a:
+#      path: /service/**
+#      serviceId: ribbon-service
+    # 针对如上配置的简洁写法
+    ribbon-service: /service/**
 management:
  security:
   enabled: false
