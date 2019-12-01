@@ -5,3 +5,8 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+  rabbitmq:
+    host: 192.168.64.128
+    port: 5672
+    username: guest
+    password: guest
