@@ -15,8 +15,12 @@ zuul:
 #    service-a:
 #      path: /service/**
 #      serviceId: ribbon-service
-    # 针对如上配置的简洁写法
+    # 针对如上配置的简洁写法  服务名：/服务前缀/服务地址
     ribbon-service: /service/**
+#   忽略接口暴露
+#   ignored-patterns: 
+#      - /网关/服务地址1
+#      - /网关/服务地址2
 management:
  security:
   enabled: false
