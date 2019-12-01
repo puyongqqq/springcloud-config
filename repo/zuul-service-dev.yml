@@ -13,7 +13,7 @@ spring:
 zuul:
   routers:
     service-a:
-      path: /service-a/**
+      path: /**
       serviceId: ribbon-service
 management:
  security:
